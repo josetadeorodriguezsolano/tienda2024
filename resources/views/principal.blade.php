@@ -32,6 +32,7 @@
     </section>
     <section id="anuncios">
         Anuncios
+        <p>Hola soy Raúl</p>
     </section>
     <section id="superOfertas">
         Super Ofertas
