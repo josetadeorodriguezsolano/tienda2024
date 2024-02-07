@@ -23,7 +23,7 @@
             <input type="text" id="txtBusqueda">
         </section>
         <section id="saludo">
-            Hola Jose
+            Hola, soy Michelle
         </section>
     </header>
     <nav>Barra de navegacion</nav>
