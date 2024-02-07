@@ -21,10 +21,7 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
-        <p>Hola soy Fernando</p>
-        <p>Hola soy Tadeo</p>
-        <p>Hola soy Josue</p>
-        <p>Hola, Soy Elian</p>
+        <p>Hola soy Berenice  c:</p>
         Anuncios
     </section>
     <section id="superOfertas">
