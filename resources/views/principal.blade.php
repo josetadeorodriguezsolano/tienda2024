@@ -31,6 +31,7 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+        <p>Hola soy Ismena</p>
         Anuncios
     </section>
     <section id="superOfertas">
