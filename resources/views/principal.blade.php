@@ -24,6 +24,7 @@
         </section>
         <section id="saludo">
             Hola, soy Michelle
+            Hola, soy Fernando
         </section>
     </header>
     <nav>Barra de navegacion</nav>
