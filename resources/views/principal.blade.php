@@ -10,7 +10,7 @@
 <body>
     <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
-        Super Tienda en Linea
+        Super Tienda en Lineas
         <section id="carrito">
             1 productos - $1857.00
             <img src="img/carrito.webp">
