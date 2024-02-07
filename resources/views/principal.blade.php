@@ -31,12 +31,14 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+        <p>Hola Soy Alan Eduardo Quack</p>
         Anuncios
     </section>
     <section id="superOfertas">
         Super Ofertas
     </section>
     <section id="masVendido">
+        <p>Hola Soy Alan ALAAAAAAN Eduardo Quack</p>
         Mas vendido
     </section>
     <section id="nuevo">
