@@ -31,6 +31,7 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+        <p>Hola soy Jesus y un niño de primaria sabe mas que yo</p>
         Anuncios
     </section>
     <section id="superOfertas">
