@@ -25,7 +25,7 @@
     <section id="anuncios">
         <p>Hola, Soy Elian</p>
         Anuncios
-        <p>Hola Soy KevinOA</p>
+        <p>Hola Soy Kevin Osuna</p>
     </section>
     <section id="superOfertas">
         Super Ofertas
