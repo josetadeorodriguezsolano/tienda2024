@@ -32,6 +32,7 @@
     </section>
     <section id="anuncios">
         Anuncios
+        <p>HOLA SOY MAXIMILIANO</p>
     </section>
     <section id="superOfertas">
         Super Ofertas
