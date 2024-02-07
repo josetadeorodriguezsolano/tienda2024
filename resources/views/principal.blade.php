@@ -21,6 +21,7 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+        <p>Hola soy Berenice  c:</p>
         Anuncios
     </section>
     <section id="superOfertas">
