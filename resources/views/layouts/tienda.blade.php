@@ -8,5 +8,14 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
+    @section("header")
+        @include('layouts.componentes.header')
+        @show
+    @section("nav")
     @section("main")
+        @show
+    @section("aside")
+    @section("footer")
+        @include('layouts.componentes.footer')
+        @show
 </body>
