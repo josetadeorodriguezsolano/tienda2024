@@ -14,7 +14,7 @@ Analogous Colors: #FFCC66 (Light Orange), #FF6600 (Darker Orange)
 Paleta complementaria
 Main Color: #00FF00 (Green)
 Complementary Color: #FF0000 (Red)
-Neutral: #FFFFFF (White) Para el balance de colores
+Neutral: #FFFFFF (White) for balance
 
 paleta complementaria corta
 Main Color: #FF6699 (Pink)
@@ -32,32 +32,5 @@ Paleta Neutral:
 Main: #CCCCCC (Light Gray)
 Secondary: #666666 (Medium Gray)
 Color Acento: #333333 (Dark Gray)
-Highlight Color: #FFFFFF (White) por contraste
+Highlight Color: #FFFFFF (White) for contrast
 **/
-
-// Color principal
-$main-color: #336699;
-
-// Definir colores mas oscuro y mas claros
-$lighter-shade: lighten($main-color, 20%);
-$darker-shade: darken($main-color, 20%);
-
-// Estilos de diferentes colores
-body {
-  background-color: $lighter-shade; //color mas claro para el fondo
-}
-
-h1 {
-  color: $main-color; // Color principal para el heading
-}
-
-p {
-  color: $darker-shade; // Oscuro para parrafos
-}
-
-a {
-  color: $main-color; // Use the main color for links
-  &:hover {
-    color: $darker-shade; // Darken the color on hover
-  }
-}
