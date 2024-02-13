@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/estilos/banners',function () {
     return view('estilos.banners');
 });
+
+Route::get('/estilos/imagenes',function () {
+    return view('estilos.imagenes');
+});
