@@ -1,1 +1,233 @@
 //Geraldo Zavala Jose Fernando
+// 13/02/2024
+// Referencias:
+// https://codepen.io/_fhdamd/pen/JRRRZX
+// http://jwebcat.github.io/tables-sass/
+// https://www.geeksforgeeks.org/foundation-css-tables-sass-reference/
+// https://www.tutorialesprogramacionya.com/cssya/bootstrapya/detalleconcepto.php?punto=11&codigo=126&inicio=0
+
+
+.tabla-basica {
+    padding: 4rem;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #000;
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+    }
+}
+
+
+
+.tabla-condensada {
+
+
+
+    padding: 4rem;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+
+        }
+
+        td {
+            padding: 10px;
+            border-top: 1px solid #c4c4c4;
+
+        }
+
+        tr {
+            text-align: center;
+
+
+            &:nth-child(even) {
+                background-color: #f1f1f1
+            }
+        }
+
+    }
+}
+
+
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
+
+.tabla-moderna {
+
+    $lfs-blue: #006ac6;
+    $lfs-yellow: #fab700;
+    $lfs-grey: #75787b;
+
+
+    padding: 4rem;
+
+    table {
+        width: 100%;
+
+        caption {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $lfs-yellow;
+            text-align: center;
+        }
+
+        thead {
+            border-top: 2px solid $lfs-yellow;
+            border-bottom: 2px solid $lfs-yellow;
+
+            th {
+                text-transform: uppercase;
+                text-align: center;
+                padding: 10px;
+                color: $lfs-blue;
+                border: 1px solid #F1F1F1;
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #F1F1F1;
+                color: $lfs-grey;
+
+                td {
+                    padding: 10px;
+                    border: 1px solid #F1F1F1;
+                }
+
+                th {
+                    padding-left: 10px;
+                    border: 1px solid #F1F1F1;
+                }
+            }
+        }
+
+        tfoot {
+            color: $lfs-yellow;
+            font-style: italic;
+            border-bottom: 2px solid $lfs-yellow;
+
+            tr {
+                td {
+                    padding: 10px;
+                    border: 1px solid #F1F1F1;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+.tabla-redondeada {
+    padding: 4rem;
+
+    table {
+        width: 100%;
+        border-radius: 20px;
+        background-color: #f1f1f1;
+        border-collapse: collapse;
+
+        td,
+        th {
+            padding: 16px;
+        }
+
+        caption {
+            letter-spacing: 5px;
+        }
+
+        thead {
+            border: 20px;
+            border-radius: 20px;
+        }
+
+        th {
+            color: black;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        tr {
+            height: 65px;
+        }
+
+        td {
+            font-size: 14px;
+            border-top: 1px solid rgba(45, 78, 69, 1);
+            color: #555;
+        }
+
+    }
+}
+
+
+.tabla-separada {
+    padding: 4rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        border-radius: 3px;
+        padding: 25px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+
+
+    .table-header {
+        background-color: #95A5A6;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+    }
+
+    .table-row {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .col-1 {
+        flex-basis: 10%;
+    }
+
+    .col-2 {
+        flex-basis: 40%;
+    }
+
+    .col-3 {
+        flex-basis: 25%;
+    }
+
+    .col-4 {
+        flex-basis: 25%;
+    }
+
+}
