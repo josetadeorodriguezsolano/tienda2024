@@ -1,0 +1,106 @@
+$text-color: #333;
+$background-color: #f4f4f4;
+
+.container {
+    color: $text-color;
+    background-color: $background-color;
+    font-family: Arial, sans-serif;
+
+    .categories {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .the-collections {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .hot-deals {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .under-99-store {
+        font-size: 1.2rem;
+        text-decoration: line-through;
+        margin-bottom: 2rem;
+    }
+
+    .new-products {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .product {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .name {
+            font-size: 1.1rem;
+            margin-right: 1rem;
+        }
+
+        .price {
+            font-size: 1rem;
+            text-decoration: line-through;
+            color: #888;
+            margin-right: 1rem;
+        }
+
+        .sale-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0066cc;
+        }
+    }
+
+    .hot-deal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        &:first-child {
+            margin-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .extra-off {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+
+        .products {
+            display: flex;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .product {
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .lorem-ipsum {
+        font-size: 0.9rem;
+        margin-top: 2rem;
+        color: #888;
+    }
+}
