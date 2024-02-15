@@ -6,3 +6,6 @@ Route::get('/', function () {
     return view('principal');
 });
 
+Route::get('/estilos/principal',function () {
+    return view('estilos.principal');
+});
