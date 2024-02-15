@@ -1,5 +1,5 @@
 
-    <header id="encabezadoPrincipal">
+<header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
         <section id="carrito">
