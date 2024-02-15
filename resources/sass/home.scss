@@ -1,106 +1,159 @@
-$text-color: #333;
-$background-color: #f4f4f4;
+$color_1: white;
+$color_2: black;
+$color_3: #443c36;
+$color_4: #ffffff;
+$font-family_1: 'Poppins', sans-serif;
+$background-color_1: white;
+$background-color_2: #e3e3e1;
+$background-color_3: #fc4c51;
 
-.container {
-    color: $text-color;
-    background-color: $background-color;
-    font-family: Arial, sans-serif;
-
-    .categories {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-    }
-
-    .the-collections {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-    }
-
-    .hot-deals {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 2rem;
-    }
-
-    .under-99-store {
-        font-size: 1.2rem;
-        text-decoration: line-through;
-        margin-bottom: 2rem;
-    }
-
-    .new-products {
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .product {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        .name {
-            font-size: 1.1rem;
-            margin-right: 1rem;
-        }
-
-        .price {
-            font-size: 1rem;
-            text-decoration: line-through;
-            color: #888;
-            margin-right: 1rem;
-        }
-
-        .sale-price {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #0066cc;
-        }
-    }
-
-    .hot-deal {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 2rem;
-
-        &:first-child {
-            margin-bottom: 1rem;
-        }
-
-        .title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-
-        .extra-off {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #0066cc;
-            margin-bottom: 1rem;
-        }
-
-        .products {
-            display: flex;
-            &:last-child {
-                margin-right: 0;
-            }
-
-            .product {
-                margin-right: 1rem;
-            }
-        }
-    }
-
-    .lorem-ipsum {
-        font-size: 0.9rem;
-        margin-top: 2rem;
-        color: #888;
-    }
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap";
+* {
+	padding: 0;
+	margin: 0;
+	font-family: $font-family_1;
+	font-weight: 600;
+}
+body {
+	background-color: $background-color_1;
+	font-weight: 100;
+	overflow-x: hidden;
+}
+#navbar {
+	width: 100%;
+	height: 70px;
+}
+#destacado {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: $background-color_2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding-left: 20px;
+	h2 {
+		font-size: 15px;
+		width: 300px;
+		margin-left: 15%;
+		font-weight: 600px;
+		margin-bottom: 15px;
+	}
+	h1 {
+		font-size: 50px;
+		width: 700px;
+		margin-left: 15%;
+		font-weight: 400;
+	}
+	img {
+		margin-left: 60%;
+		position: absolute;
+		height: 600px;
+	}
+}
+#comprar {
+	font-weight: bold;
+	font-size: 14px;
+	padding: 12px 25px;
+	background-color: $background-color_3;
+	color: $color_1;
+	border: none;
+	cursor: pointer;
+	margin-left: 15%;
+	margin-top: 15px;
+}
+#articulos {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.articulo {
+	background: #fff;
+	width: 22%;
+	margin: 10px;
+	margin-bottom: 30px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease;
+	position: relative;
+	&:hover {
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		transform: translateY(-5px);
+	}
+}
+.imagen {
+	max-height: 200px;
+	overflow: hidden;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.contenido {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $color_2;
+	text-align: center;
+	padding: 1px;
+	h3 {
+		color: $color_3;
+		font-size: 1.4em;
+		margin-bottom: 10px;
+		background-color: $background-color_1;
+		width: 150px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+}
+.tendencia-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.tendencia {
+	position: relative;
+	width: 300px;
+	height: 400px;
+	margin: 16px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		transition: transform 0.3s ease-in-out;
+	}
+}
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(53, 53, 53, 0.8);
+	color: $color_4;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 0.3s ease-in-out;
+}
+#tendencia {
+	h1 {
+		text-align: center;
+		padding-top: 25px;
+		padding-bottom: 20px;
+		font-size: 35px;
+	}
 }
