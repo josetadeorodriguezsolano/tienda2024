@@ -1,0 +1,61 @@
+1 Compras
+    -Agregar al carrito.
+    -Quitar del carrito.
+    -Modificar carrito.
+    -Guardar para despues.
+    -Pagar
+    -Crear pedido.
+2 Ofertas
+    -Dar de alta ofertas.
+    -Publicar las ofertas.
+    -Validar la ofertas al momento de la compra.
+3 Busquedas
+    -Pagina principal
+    -Busqueda por categoria.
+    -Busqueda general
+    -Filtros por marca, modulo y otras caracterizticas.
+4 Comentarios
+    -Calificar productos comprados.
+    -Pulgar arriba a otro comentario.
+    -Pulgar abajo a otro comentario.
+    -Calificaion promedio.
+    -Filtro de buenos comentarios.
+    -Filtro de malos comentarios.
+    -Calificacion del proveedor.
+5 Clientes
+    -Registro
+        -Datos generales
+        -Formas de pago
+        -Direcciones
+    -Actualizar datos
+    -Recuperar contraseña
+    -Cambiar contraseña
+    -Validad cuenta
+6 Pedidos
+    -Administar el pedido, enviado, rechazado, recibido.
+    -Devoluciones.
+    -Historial de pedidos.
+    -Volver a pedir.
+    -Envios.
+        -Catalogo de paqueterias.
+        -Rastreo de paquetes.
+7 Proveedores
+    -Alta proveedor.
+    -Catalogo productos.
+    -Catalogo categorias.
+8 Pagina proveedor.
+    -Banners
+    -Categorias
+    -Menu
+    -Promociones
+9 Reportes
+    -Productos mas vendidos.
+    -Ganacias por periodo.
+    -Ventas por periodo.
+    -Ventas por proveedor.
+10
+11
+12
+13
+14
+15
