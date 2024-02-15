@@ -18,3 +18,7 @@ Route::get('/estilos/loading',function () {
 Route::get('/estilos/inputs',function () {
     return view('estilos.inputs');
 });
+Route::get('/tarjetas', function () {
+    return view('layouts.componentes.tarjetas');
+});
+

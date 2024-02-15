@@ -1,8 +1,6 @@
 @extends('layouts.plantilla')
 @section('titulo','Textos')
 @section('main')
-
-
     <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
