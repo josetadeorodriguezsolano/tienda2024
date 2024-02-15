@@ -1,1 +1,102 @@
 //Lomeli Buitron Berenice
+$colorBackGround:rgb(108, 161, 163);
+$tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$fondoTextBox:rgb(235, 232, 232);
+$colorTextoTextBox: rgb(112, 111, 111);
+$fondoBoton:black;
+$colorTextoBoton: aliceblue;
+$colorBackGroundHover:rgb(63, 63, 63);
+
+
+.PiePag{
+    height: 410px;
+    background-color:$colorBackGround;
+    display: flex;
+    padding-top: 10px;
+    padding-left: 40px;
+    font-family: $tipografia;
+}
+#atencion_Cliente
+{
+    padding-top: 150px;
+    padding-right: 60px;
+}
+.titulo{
+    font-weight: bold;
+    padding-top: 100px;
+    padding-right: 50px;
+}
+ul
+{
+    font-weight: bold;
+    line-height: 55px;
+}
+li
+{
+    font-weight: lighter;
+    list-style: none;
+    line-height: 30px;
+}
+.texto
+{
+    position:absolute;
+    height: 55px;
+    width: 355px;
+
+    left: 900px;
+    top: 245px;
+
+    text-align: center;
+    background-color:$fondoTextBox;
+    border-width: 2px;
+    border-style:solid;
+    color:$colorTextoTextBox;
+    font-size: 1em;
+}
+.boton
+{
+    position:absolute;
+    height: 55px;
+    width: 355px;
+
+    top: 302px;
+    left: 900px;
+
+    background-color: $fondoBoton;
+    color: $colorTextoBoton;
+    border-style: none;
+    font-size: 1.5em;
+
+    &:hover {
+        background-color:$colorBackGroundHover;
+        cursor: pointer;
+    }
+}
+section{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+.logo{
+    height: 101px;
+    width: 291px;
+    position:absolute;
+    margin-top: 60px;
+}
+.redes
+{
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    margin-top: 315px;
+}
+#face{
+    padding-left: 35px;
+}
+#insta{
+    padding-left: 90px;
+}
+#in{
+    padding-left: 145px;
+}
+
