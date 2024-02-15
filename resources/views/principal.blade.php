@@ -9,6 +9,7 @@
         <section id="cuenta">
             <button>Registrate</button>
             <button>Mi cuenta</button>
+
         </section>
         <section id="busqueda">
             <input type="text" id="txtBusqueda">
