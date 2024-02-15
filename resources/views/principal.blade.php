@@ -1,3 +1,5 @@
+
+<header id="encabezadoPrincipal">
 @extends('layouts.plantilla')
 @section('titulo','Textos')
 @section('main')
