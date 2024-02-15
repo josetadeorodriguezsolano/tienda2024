@@ -23,6 +23,12 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+<<<<<<< HEAD
+        <p>Hola soy Fernando</p>
+=======
+        <p>Hola soy Tadeo</p>
+        <p> Hola soy Josue</p>
+>>>>>>> tienda/tadeo
         <p>Hola, Soy Elian</p>
         Anuncios
     </section>
