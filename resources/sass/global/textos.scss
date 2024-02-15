@@ -1,11 +1,109 @@
 //Altamirano Ortega Adan
+
+@keyframes colorchange {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: blue;}
+    75%  {color: green;}
+    100% {color: red;}
+}
+@keyframes fontchange {
+  0%   {font-family: 'Roboto', sans-serif; color: violet; font-style: normal;}
+  25%  {font-family: 'Copperplate', sans-serif; color: darkred; font-style: italic;}
+  50%  {font-family: 'Arial', sans-serif; color: blue; font-style: oblique;}
+  75%  {font-family: 'Times New Roman', serif; color: darkcyan; font-style: normal;}
+  100% {font-family: 'Papyrus', sans-serif; color: red; font-style: italic;}
+}
+@keyframes fontchangeh2 {
+    0%   {font-family: 'verdana', sans-serif; color: violet; font-weight: bold;}
+    25%  {font-family: 'Helvetica', sans-serif; color: darkorange; font-weight: bold;}
+    50%  {font-family: 'monaco', sans-serif; color: blue; font-weight: bold;}
+    75%  {font-family: 'Lucida Console', serif; color: darkcyan; font-weight: bold;}
+    100% {font-family: 'Corier New', sans-serif; color: red; font-weight: normal;}
+  }
+  @keyframes fontchangeh3 {
+    0%   {font-family: 'Brush Script MT', sans-serif; color: violet;  font-variant: small-caps;}
+    25%  {font-family: 'Lucida HandWriting', sans-serif; color: darkgreen;  font-variant: small-caps;}
+    50%  {font-family: 'Brush Script MT', sans-serif; color: blue;  font-variant: small-caps;}
+    75%  {font-family: 'Lucida HandWriting', serif; color:darkcyan;  font-variant: small-caps;}
+    100% {font-family: 'Brush Script MT', sans-serif; color: red;  font-variant: small-caps;}
+  }
+  @keyframes fontchangeh4 {
+    0%   {font-family: 'Roboto', sans-serif; color: violet; font-size: 15px;}
+    25%  {font-family: 'Copperplate', sans-serif; color: darkmagenta;  font-size: 30px;}
+    50%  {font-family: 'Arial', sans-serif; color: blue;  font-size: 10px;}
+    75%  {font-family: 'Times New Roman', serif; color: darkcyan;  font-size: 20px;}
+    100% {font-family: 'Papyrus', sans-serif; color: red;  font-size: 35px;}
+  }
+
+  @keyframes fontchangeh4 {
+    0%   {font-family: 'Roboto', sans-serif; color: violet; font-size: 15px;}
+    25%  {font-family: 'Copperplate', sans-serif; color: darkmagenta;  font-size: 30px;}
+    50%  {font-family: 'Arial', sans-serif; color: blue;  font-size: 10px;}
+    75%  {font-family: 'Times New Roman', serif; color: darkcyan;  font-size: 20px;}
+    100% {font-family: 'Papyrus', sans-serif; color: red;  font-size: 35px;}
+  }
+  @keyframes fontchangeh5 {
+    0%   {font-family: 'Roboto', sans-serif; color: violet; }
+    25%  {font-family: 'Copperplate', sans-serif; color: darkmagenta; }
+    50%  {font-family: 'Arial', sans-serif; color: blue;  }
+    75%  {font-family: 'Times New Roman', serif; color: darkcyan;  }
+    100% {font-family: 'Papyrus', sans-serif; color: red;  }
+  }
+  @keyframes fontchangeh6 {
+    0%   {font-family: 'Roboto', sans-serif; color: violet; }
+    25%  {font-family: 'Copperplate', sans-serif; color: darkmagenta;  }
+    50%  {font-family: 'Arial', sans-serif; color: blue;  }
+    75%  {font-family: 'Times New Roman', serif; color: darkcyan;  }
+    100% {font-family: 'Papyrus', sans-serif; color: red;  }
+  }
+  @keyframes fontchangep {
+    0%   {font-family: 'Roboto', sans-serif; color: violet; font-size:20px;  align-content: center; line-height: 10px; }
+    25%  {font-family: 'Copperplate', sans-serif; color: darkmagenta; font-size: 30px; align-content:end;line-height: 15px  }
+    50%  {font-family: 'Arial', sans-serif; color: blue; font-size: 35px;  align-content:baseline; line-height: 20px}
+    75%  {font-family: 'Times New Roman', serif; color: darkcyan; font-size: 15px;  align-content:flex-end;line-height: 30px  }
+    100% {font-family: 'Papyrus', sans-serif; color: red;font-size: 25px; align-content: flex-end; line-height: 40px;  }
+  }
 p
 {
-
-}
+    animation-name: fontchangep;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;}
 h1{
 
+animation-name: fontchange;
+animation-duration: 6s;
+animation-iteration-count: infinite;
+}
+h2{
+
+    animation-name: fontchangeh2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+h3{
+    animation-name: fontchangeh3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+h4{
+    animation-name: fontchangeh4;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+h5{
+    animation-name: fontchangeh5;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 h6{
-
+    animation-name: fontchangeh6;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
+
+#tituloh1{
+
+    color: red;
+   }
