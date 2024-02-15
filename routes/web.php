@@ -14,3 +14,7 @@ Route::get('/estilos/banners',function () {
 Route::get('/estilos/loading',function () {
     return view('estilos.loading');
 });
+// Inputs Alan
+Route::get('/estilos/inputs',function () {
+    return view('estilos.inputs');
+});
