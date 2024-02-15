@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('principal');
+    return view('tienda.test');
 });
 
 Route::get('/estilos/banners',function () {
