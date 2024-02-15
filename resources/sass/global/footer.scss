@@ -1,7 +1,4 @@
-// Lomeli Buitron Berenice
-// 14 de febrero del 2024
-// Refencias de paginas actuales de venta como: sasha, mercado libre, amazon, Temu
-
+//Lomeli Buitron Berenice
 $colorBackGround:rgb(108, 161, 163);
 $tipografia: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 $fondoTextBox:rgb(235, 232, 232);
@@ -11,190 +8,95 @@ $colorTextoBoton: aliceblue;
 $colorBackGroundHover:rgb(63, 63, 63);
 
 
-.PiePag1{
+.PiePag{
     height: 410px;
     background-color:$colorBackGround;
     display: flex;
     padding-top: 10px;
     padding-left: 40px;
     font-family: $tipografia;
+}
+#atencion_Cliente
+{
+    padding-top: 150px;
+    padding-right: 60px;
+}
+.titulo{
+    font-weight: bold;
+    padding-top: 100px;
+    padding-right: 50px;
+}
+ul
+{
+    font-weight: bold;
+    line-height: 55px;
+}
+li
+{
+    font-weight: lighter;
+    list-style: none;
+    line-height: 30px;
+}
+.texto
+{
+    position:absolute;
+    height: 55px;
+    width: 355px;
 
-    #atencion_Cliente
-    {
-        padding-top: 150px;
-        padding-right: 60px;
-    }
-    .titulo{
-        font-weight: bold;
-        padding-top: 100px;
-        padding-right: 50px;
-    }
-    ul
-    {
-        font-weight: bold;
-        line-height: 55px;
-    }
-    li
-    {
-        font-weight: lighter;
-        list-style: none;
-        line-height: 30px;
-    }
-    .texto
-    {
-        position:absolute;
-        height: 55px;
-        width: 355px;
+    left: 900px;
+    top: 245px;
 
-        left: 900px;
-        top: 245px;
+    text-align: center;
+    background-color:$fondoTextBox;
+    border-width: 2px;
+    border-style:solid;
+    color:$colorTextoTextBox;
+    font-size: 1em;
+}
+.boton
+{
+    position:absolute;
+    height: 55px;
+    width: 355px;
 
-        text-align: center;
-        background-color:$fondoTextBox;
-        border-width: 2px;
-        border-style:solid;
-        color:$colorTextoTextBox;
-        font-size: 1em;
-    }
-    .boton
-    {
-        position:absolute;
-        height: 55px;
-        width: 355px;
+    top: 302px;
+    left: 900px;
 
-        top: 302px;
-        left: 900px;
+    background-color: $fondoBoton;
+    color: $colorTextoBoton;
+    border-style: none;
+    font-size: 1.5em;
 
-        background-color: $fondoBoton;
-        color: $colorTextoBoton;
-        border-style: none;
-        font-size: 1.5em;
-
-        &:hover {
-            background-color:$colorBackGroundHover;
-            cursor:pointer;
-        }
-    }
-    section{
-        position: absolute;
-        width: 10px;
-        height: 10px;
-    }
-    .logo{
-        height: 101px;
-        width: 291px;
-        position:absolute;
-        margin-top: 60px;
-    }
-    .redes
-    {
-        height: 50px;
-        width: 50px;
-        position:absolute;
-        margin-top: 315px;
-    }
-    #face{
-        padding-left: 35px;
-    }
-    #insta{
-        padding-left: 90px;
-    }
-    #in{
-        padding-left: 145px;
+    &:hover {
+        background-color:$colorBackGroundHover;
+        cursor: pointer;
     }
 }
-
-////////////////////////////////////////////////////////////////////////////////
-$tipografia2:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-$colorBackGroundOscuro:#232F3E;
-$colorTexto: white;
-$colorBackGroundBoton:#37475A;
-$colorBackGroundHover2:#5F7289;
-
-.PiePag2{
-    height: 450px;
-    color: $colorTexto;
-    font-family:$tipografia2;
-    background: $colorBackGroundOscuro;
-    .s1{
-        position: absolute;
-        width: 1503px;
-        height: 50px;
-        .boton{
-            color: $colorTexto;
-            font-family:$tipografia2;
-
-            position: relative;
-            padding: none;
-            width: 100%;
-            height: 50px;
-            font-size: 15;
-            background-color:$colorBackGroundBoton;
-            border: none;
-            letter-spacing: 1px;
-            &:hover
-            {
-                background-color:$colorBackGroundHover2;
-            }
-        }
-    }
-    .s2
-    {
-        display: flex;
-        padding-left:250px;
-        ul
-        {
-            font-size: 14px;
-            margin-top: 70px;
-            font-weight: bold;
-            line-height: 55px;
-        }
-        li
-        {
-            font-size: 13px;
-            font-weight: lighter;
-            list-style: none;
-            line-height: 30px;
-        }
-    }
-    hr{
-        border: none;
-
-        background-color: $colorTexto;
-        height:.01em;
-    }
-    .logo{
-        height: 50px;
-        width: 146px;
-        position:absolute;
-        margin-left: 670px;
-    }
-    p{
-        padding-left: 327px;
-        padding-top: 55px;
-        font-size: 11px;
-        color: #bac3ce;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-    .s3
-    {
-        position: relative;
-        background-color: #131A22;
-        color: #bac3ce;
-        height: 60px;
-        padding-top: 10px;
-        span{
-            display: block;
-            font-size: 11px;
-            color: #bac3ce;
-            padding-left: 645px;
-            padding-top: 5px;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-    }
+section{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+}
+.logo{
+    height: 101px;
+    width: 291px;
+    position:absolute;
+    margin-top: 60px;
+}
+.redes
+{
+    height: 50px;
+    width: 50px;
+    position:absolute;
+    margin-top: 315px;
+}
+#face{
+    padding-left: 35px;
+}
+#insta{
+    padding-left: 90px;
+}
+#in{
+    padding-left: 145px;
 }
 
