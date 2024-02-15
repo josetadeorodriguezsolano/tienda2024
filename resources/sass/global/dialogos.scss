@@ -1,0 +1,17 @@
+//Estrada Becerra Ismena Abigail
+div.flotante{
+    padding: 50px;
+    font-family: same-serif;
+}
+button{
+    background-color: aqua;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+}
+#modal::backdrop{
+    background-color: rgba(0,0,0,.55);
+}
+#modal{
+    max-width: 50ch;
+}
