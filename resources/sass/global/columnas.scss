@@ -1,4 +1,21 @@
 //Ramirez Palacios Michelle Alexandra
-div.dos_columna{
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.columna-3{
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    flex-basis: 33%;
+}
+.columna-2{
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    flex-basis: 50%;
 }
