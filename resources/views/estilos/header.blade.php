@@ -1,3 +1,6 @@
+<!--Referencia del diseño-->
+<!--https://jonathanvelez.com/que-es-header-de-una-pagina-web/-->
+<!--https://esferacreativa.com/header-de-una-pagina-web/-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
