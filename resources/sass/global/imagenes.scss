@@ -1,3 +1,4 @@
+//Osuna Andrade Kevin
 // Variables comunes
 $border-radius: 8px;
 $box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -29,18 +30,6 @@ $imagen-height: 300px;
     transform: rotate(360deg);
   }
 }
-.imagen3 {
-  display: block;
-  width: $imagen-width;
-  height: $imagen-height;
-  border: 2px solid #f00; // Borde rojo de 2px
-  box-shadow: $box-shadow;
-  transition: border-color 0.3s ease-in-out;
-
-  &:hover {
-    border-color: #00f; // Cambia el color del borde a azul al hacer hover
-  }
-}
 .imagen4 {
   display: block;
   width: $imagen-width;
@@ -50,7 +39,7 @@ $imagen-height: 300px;
   transition: transform 0.3s ease-in-out;
 
   &:hover {
-    transform: translateY(-5px); // Desplaza la imagen hacia arriba al hacer hover
+    transform: translateY(-10px); // Desplaza la imagen hacia arriba al hacer hover
   }
 }
 .imagen5 {
@@ -78,4 +67,25 @@ $imagen-height: 300px;
     width: $imagen-width;
     height: $imagen-height;
     border-radius: 50%;
+  }
+
+ .contenedor {
+    text-align: center;
+  }
+
+  .imagenes {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Estilos aplicados cuando se activa el enlace con el ID 'imagen' */
+  .imagenes:target {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Amplía la imagen al 200% y la centra */
+    z-index: 9999;
+    width: auto;
+    height: auto;
   }
