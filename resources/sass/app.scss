@@ -1,17 +1,32 @@
 @import "w3";
-$colorTexto:white;
+@import "global/banners";
+@import "global/colores";
+@import "global/columnas";
+@import "global/dialogos";
+@import "global/footer";
+@import "global/header";
+@import "global/imagenes";
+@import "global/inputs";
+@import "global/loading";
+@import "global/nav";
+@import "global/principal";
+@import "global/tablas";
+@import "global/tarjetas";
+@import "global/textos";
+$colorTexto:rgb(28, 23, 23);
 $fondoTexto:red;
 .colorTexto{
     @extend .w3-indigo;
 }
+
 
 #encabezadoPrincipal
 {
     @extend .w3-container;
     @extend .colorTexto;
     >img{
-        width: 100px;
-        height: 50px;
+        width: 20px;
+        height: 20px;
     }
     #carrito{
         img{
@@ -28,4 +43,6 @@ $fondoTexto:red;
     #saludo{
 
     }
+
+
 }

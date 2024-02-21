@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-</head>
-<body>
+@extends('layouts.plantilla')
+@section('titulo','Textos')
+@section('main')
     <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
@@ -23,7 +16,8 @@
             <input type="text" id="txtBusqueda">
         </section>
         <section id="saludo">
-            Hola Jose
+            Hola, soy Michelle
+            Hola, soy Fernando
         </section>
     </header>
     <nav>Barra de navegacion</nav>
@@ -31,6 +25,12 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+<<<<<<< HEAD
+        <p>Hola soy Fernando</p>
+        <p>Hola soy Tadeo</p>
+        <p> Hola soy Josue</p>
+=======
+>>>>>>> tienda/tadeo
         Anuncios
         <p>Hola soy Raúl</p>
     </section>
@@ -58,5 +58,30 @@
     <footer>
         Pie de pagina
     </footer>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit, convallis tellus gravida
+        habitant ultrices nunc, mus tempus tempor etiam massa auctor. Augue facilisi vestibulum
+        nostra odio integer sapien quis suscipit porta rhoncus etiam dignissim tellus, netus massa
+        dictum arcu volutpat mus conubia interdum auctor nibh nulla urna. Sollicitudin tellus netus odio
+        lacus felis pharetra aenean, eget mauris dapibus inceptos eleifend varius, viverra mus libero sociis ridiculus ad.
+    </p>
+        <h1>
+        Holaa soy H1
+        </h1>
+        <h2>
+            Holaa soy H2
+        </h2>
+        <h3>
+            Holaa soy H3
+        </h3>
+        <h4>
+            Holaa soy H4
+        </h4>
+        <h5>
+            Holaa soy H5
+        </h5>
+        <h5>
+            Holaa soy H6
+        </h5>
 </body>
 </html>
