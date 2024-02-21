@@ -1,1 +1,403 @@
-//Juárez Castellon Cesar Emmanuel
+//Juárez Castellón César Emmanuel
+// 14/02/2024
+// Referencias Aliexpress, Walmart, Amazon, MercadoLibre
+@import "/resources/sass/w3";
+
+#tarjeta01 {
+    display:inline-block;
+
+.tarjeta {
+
+    width: 300px;
+    height: 520px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  }
+  .imgTarjeta {
+    margin-left: 25px;
+    width: 200px;
+    height: auto;
+    display: block;
+    &:hover{
+        cursor:pointer;
+    }
+     }
+.ratingTarjeta {
+    overflow: hidden;
+    font-size: 30px;
+
+        color: #ffcc00; // Estilizar según el número de estrellas
+        &:hover{
+            cursor:pointer;
+        }
+      }
+.butonTarjeta {
+        //class="w3-blue" style="text-shadow:1px 1px 0 #444
+
+        padding: 16px;
+        background: #f8f8f8;
+        text-align: center;
+        button {
+          background-color: #2196f3;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          cursor: pointer;
+          font-size: 0.9em;
+
+          &:hover {
+            background-color: darken(#2196f3, 10%);
+          }
+        }
+      }
+    .detallesProducto {
+        p {
+          font-size: 0.9em;
+          color: #666;
+          margin-bottom: 8px;
+        }
+      }
+
+.precioTarjeta {
+        color: #e53935;
+        font-weight: bold;
+        margin-bottom: 16px;
+        &:hover{
+            cursor:pointer;
+        }
+      }
+.tituloTarjeta {
+
+        width: 270px;
+        height: 80px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 3px;
+        overflow:hidden;
+        &:hover{
+            cursor:pointer;
+        }
+      }
+.contenidoTarjeta {
+        padding: 16px;
+        background: #fff;
+        &:hover{
+            cursor:pointer;
+        }
+      }
+    }
+
+#tarjeta02 {
+
+    display:inline-block;
+
+      .tarjeta {
+        display:inline-block;
+        width: 300px;
+        height: 520px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+      }
+      .butonTarjeta {
+
+        padding: 16px;
+
+        text-align: left;
+        button {
+            color: #eee;
+          background-color: #2196f3;
+          text-shadow:1px 1px 0 #444;
+          border: none;
+          padding: 10px 10px;
+          border-radius: 20px;
+          cursor: pointer;
+          font-size: 1em;
+
+          &:hover {
+            color: #ffffff;
+            background-color: darken(#0c6fc1, 10%);
+            cursor:pointer;
+          }
+        }
+      }
+      .imgTarjeta {
+        margin-left: 25px;
+        width: 200px;
+        height: auto;
+        display: block;
+         }
+    .ratingTarjeta {
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 30px;
+        color: #ff6f00; // Estilizar según el número de estrellas
+          }
+    .detallesProducto {
+            p {
+              font-size: 0.9em;
+              color: #666;
+              margin-bottom: 8px;
+            }
+          }
+
+    .precioTarjeta {
+            color: #107d01fe;
+            font-weight: bold;
+            margin-bottom: 16px;
+          }
+
+    .preciOferta{
+        font-size:smaller;
+        font-weight: bold;
+        text-decoration: line-through;
+    }
+    .tituloTarjeta {
+        width: 270px;
+        max-height: 60px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 3px;
+        overflow:hidden;
+        text-overflow: ellipsis;
+
+          }
+    .marca{
+        text-align: left;
+        width: 100%;
+        height: 1px;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .meses {
+        text-align: left;
+        width: 100%;
+        height: 1px;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    .contenidoTarjeta {
+            padding: 16px;
+            background: #fff;
+          }
+
+
+    }
+#tarjeta03 {
+    display:inline-block;
+        .tarjeta {
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+
+            .imagenProducto {
+              width: 300px;
+              height: 300px;
+              img {
+                width: 300px;
+                display: block;
+              }
+            }
+
+            .infoProducto {
+              padding: 15px;
+
+              .tituloProducto {
+                font-size: 1em;
+                color: #333;
+                margin-bottom: 8px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+
+                &:hover{
+                    color: #e3a412;
+                    cursor:pointer;
+                }
+              }
+
+              .calificacionProducto {
+                .rating {
+                  color: #f5a623;
+                }
+                .cantReview,
+                .vendido {
+                  color: #666;
+                  font-size: 0.85em;
+                  padding-left: 5px;
+                }
+              }
+
+              .precioProducto {
+                color: #000000;
+                font-weight: bold;
+                margin: 8px 0;
+                .infoCompra {
+                  display: block;
+                  font-size: 0.85em;
+                  color: #666;
+                }
+                &:hover{
+                    color: #777776;
+                    cursor:pointer;
+                }
+              }
+
+              .opcionAdicional {
+                font-size: 0.85em;
+                color: #666;
+                .precioAdicional {
+                  display: block;
+                  color: #333;
+                  &:hover{
+                    color: #9f7106;
+                    cursor:pointer;
+                }
+                }
+              }
+            }
+          }
+
+    }
+        #tarjetaHorizontal {
+            width: 700px;
+            .tarjeta {
+              display: flex;
+              background: white;
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+              margin: 20px;
+              padding: 10px;
+              align-items: center;
+
+              .imagenProducto {
+                flex: 0 0 auto;
+                padding: 10px;
+                img {
+                  max-width: 100px; // Ajusta esto según el tamaño de tus imágenes
+                  height: auto;
+                }
+                &:hover{
+                    background-color: #f5f4f3;
+                    cursor:pointer;
+                }
+              }
+
+              .infoProducto {
+                flex: 1;
+                padding-left: 20px;
+
+                .descuento {
+                  background-color: #ffcc00;
+                  color: white;
+                  font-weight: bold;
+                  padding: 2px 5px;
+                  border-radius: 3px;
+                  font-size: 0.8em;
+                  margin-bottom: 5px;
+                  display: inline-block;
+                }
+
+                .tituloProducto {
+                  font-size: 1em;
+                  font-weight: bold;
+                  margin: 5px 0;
+                  color: #333;
+                  white-space: nowrap; // Asegura que el texto se quede en una sola línea
+                  overflow: hidden; // Esconde el texto que se desborde del contenedor
+                  text-overflow: ellipsis; // Añade puntos suspensivos al final del texto oculto
+                  max-width: 500px;
+                  &:hover{
+                    background-color: #f5f4f3;
+                    cursor:pointer;
+                }
+                }
+
+                .calificacionProducto {
+                  display: flex;
+                  align-items: center;
+
+                  .rating {
+                    color: #ffc107; // Cambia el color según necesites
+                    margin-right: 5px;
+                  }
+
+                  .cantReview {
+                    color: #666;
+                    font-size: 0.9em;
+                    &:hover{
+                        background-color: #f5f4f3;
+                        cursor:pointer;
+                    }
+                  }
+                }
+
+                .precioProducto {
+                  margin: 10px 0;
+
+                  .precioTachado {
+                    text-decoration: line-through;
+                    color: #999;
+                    margin-right: 10px;
+                  }
+
+                  .precioFinal {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    color: #292828;
+                  }
+
+                  .infoCompra {
+                    color: #666;
+                    font-size: 0.8em;
+                    display: inline;
+                  }
+                  &:hover{
+                    background-color: #f5f4f3;
+                    cursor:pointer;
+                }
+                }
+
+                .envio {
+                  font-size: 0.9em;
+                  color: #4CAF50;
+
+                  .enviadoPor {
+                    font-weight: bold;
+                  }
+                }
+
+                .opcionAdicional {
+                  font-size: 0.8em;
+                  color: #666;
+                  margin-top: 5px;
+
+                  .precioAdicional {
+                    display: block;
+                    color: #999;
+                  }
+                }
+              }
+            }
+          }
+
+/*
+white-space: nowrap; // Asegura que el texto se quede en una sola línea
+overflow: hidden; // Esconde el texto que se desborde del contenedor
+text-overflow: ellipsis; // Añade puntos suspensivos al final del texto oculto
+transition: max-width 0.3s ease-in-out; // Transición suave para el cambio de ancho
+max-width: 150px; // Un ancho máximo inicial para el texto
+  */
