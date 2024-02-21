@@ -17,8 +17,10 @@ class CategoriaFactory extends Factory
     public function definition(): array
     {
         return [
-            //id automatico
-            'nombre'=>fake()->Word(),
+
+         'nombre' => fake()->Word(),
+
+
         ];
     }
 }
