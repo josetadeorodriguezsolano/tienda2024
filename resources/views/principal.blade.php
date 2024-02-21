@@ -1,5 +1,10 @@
 
-<header id="encabezadoPrincipal">
+@extends('layouts.plantilla')
+@section('titulo','tarjetas')
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@section('main')
+    @vite(['resources/sass/global/tarjetas.scss', 'resources/js/app.js'])
+    <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
         <section id="carrito">
@@ -21,7 +26,6 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
-        <p>Hola soy Berenice  c:</p>
         Anuncios
     </section>
     <section id="superOfertas">
@@ -62,9 +66,6 @@
                 </div>
             </div>
         </section>
-        @endforeach
-        @endif
-         {{$productos->links()}}
     </section>
     <section id="comentarios">
         Comentarios
