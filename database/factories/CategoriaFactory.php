@@ -2,6 +2,10 @@
 
 namespace Database\Factories;
 
+<<<<<<< HEAD
+=======
+use Doctrine\Inflector\Rules\Word;
+>>>>>>> origin/main
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,10 +21,14 @@ class CategoriaFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
 
          'nombre' => fake()->Word(),
 
 
+=======
+            "nombre" => fake()->Word(),
+>>>>>>> origin/main
         ];
     }
 }
