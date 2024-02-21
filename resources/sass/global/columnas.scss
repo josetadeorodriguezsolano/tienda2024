@@ -1,21 +1,100 @@
 //Ramirez Palacios Michelle Alexandra
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+// 18-Feb-2024
+// https://www.staffdigital.pe/blog/diseno-de-paginas-web-10-tendencias-navegacion-web/
+// https://es.wix.com/blog/2020/05/los-mejores-patrones-de-diseno-web/
+.custom-row {
+    margin-top: 20px;
+}
+.custom-col {
+    padding: 15px;
 }
 
-.columna-3{
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    flex-basis: 33%;
+// 3 Columnas
+.blanco, .morado {
+    text-align: center;
+    padding: 30px;   
+    margin-top: 15px;
+
 }
-.columna-2{
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    flex-basis: 50%;
+.blanco {
+    border: 1px solid #EEEEEE;
+}
+.blanco h2 {
+    color: #BB44DB;
+}
+.morado {
+    color: white;
+    background-color: #BB44DB;
+}
+.morado * {
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar relleno */
+}
+.morado h2 {
+    margin-bottom: 0px;
+    margin-top: 0px !important;
+}
+
+// 2 Columnas
+.gris-claro {
+    background-color: #EEEEEE; /* Fondo gris claro */
+}
+  
+.gris-oscuro {
+    background-color: #5E5E5E; /* Fondo gris oscuro */
+}
+
+.custom-content {
+    border-radius: 10px;
+}
+  
+.marco-claro {
+    border: 1px solid #fff; /* Marco blanco */
+    padding: 10px; /* Margen de 10px */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+}
+  
+.marco-oscuro {
+    border: 1px solid #000000; /* Marco negro */
+    padding: 10px; /* Margen de 10px */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    border-radius: 10px;
+}
+// 4 Columnas
+.lila {
+    background-color: #E7DBE6;
+    border: 3px solid white;
+    text-align: center;
+    height: 250px;
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Dirección de columna para alinear elementos verticalmente */
+    justify-content: flex-end; /* Alinear elementos al final del contenedor */
+}
+  
+.texto {
+    padding: 10px; /* Padding para espacio interno */
+    padding-top: 60%;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: flex-start; /* Alinear contenido en la parte superior */
+    flex-grow: 1; /* Permitir que el div crezca para ocupar el espacio disponible */
+}
+  
+.texto p {
+    margin: 0; /* Elimina el margen del párrafo */
+}
+  
+/* Eliminar margen derecho de la última columna en cada fila */
+.custom-row > div:last-child {
+    margin-right: 0;
 }
