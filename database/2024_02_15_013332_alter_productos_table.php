@@ -1,5 +1,5 @@
 <?php
-
+//CREAR UNA TABLA
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('productos', function(Blueprint $table){
-            $table->renameCOlumn('categoria_id','cat');
+        //renombrar                         Blueprint->PLANOS de esquemas
+        Schema::table('productos', function (Blueprint $table) {
+           //$table->renameColumn('categoria_id', 'cat');
         });
     }
 
@@ -21,8 +22,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('productos', function(Blueprint $table){
-            $table->renameCOlumn('categoria_id','cat');
+        //renombrar lo mismo que arriba pero al reves
+        Schema::table('productos', function (Blueprint $table) {
+           // $table->renameColumn('cat', 'categoria_id');
         });
     }
 };
