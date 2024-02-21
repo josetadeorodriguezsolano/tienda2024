@@ -37,6 +37,7 @@
     </section>
     <section id="gamers">
         Gamers
+        
     </section>
     <section id="comentarios">
         Comentarios
