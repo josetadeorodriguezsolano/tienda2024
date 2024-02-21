@@ -17,6 +17,7 @@ return new class extends Migration
             $table->foreignId("categoria_id")->references('id')->on('categorias');
             $table->text("descripcion");
             $table->unsignedDouble("precio");
+            $table->string("imagen")->default("img/No_image_available.jpg");
             $table->timestamps();
         });
     }
