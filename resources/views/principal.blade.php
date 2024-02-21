@@ -16,8 +16,6 @@
             <input type="text" id="txtBusqueda">
         </section>
         <section id="saludo">
-            Hola, soy Michelle
-            Hola, soy Fernando
         </section>
     </header>
     <nav>Barra de navegacion</nav>
@@ -25,12 +23,6 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
-<<<<<<< HEAD
-        <p>Hola soy Fernando</p>
-        <p>Hola soy Tadeo</p>
-        <p> Hola soy Josue</p>
-=======
->>>>>>> tienda/tadeo
         Anuncios
     </section>
     <section id="superOfertas">
