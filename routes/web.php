@@ -14,3 +14,16 @@ Route::get('/estilos/banners',function () {
 Route::get('/estilos/tablas',function () {
     return view('estilos.tablas');
 });
+
+
+Route::get('/estilos/loading',function () {
+    return view('estilos.loading');
+});
+// Inputs Alan
+Route::get('/estilos/inputs',function () {
+    return view('estilos.inputs');
+});
+Route::get('/tarjetas', function () {
+    return view('layouts.componentes.tarjetas');
+});
+
