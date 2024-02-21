@@ -1,1 +1,61 @@
-//Ortiz Cortes Maximiliano
+// Definir variables
+$banner-width: 100%; // Ancho del banner
+$banner-height: 100%; // Altura del banner
+
+// Estilos del banner
+.banner {
+  width: $banner-width;
+  height: $banner-height;
+  overflow: hidden;
+  position: relative;
+
+  .banner-content {
+    background-color: beige;
+    position: absolute;
+    display: flex; // Hacer que los elementos dentro se muestren en línea
+    transition: transform 0.5s ease; // Agregar una transición suave para el desplazamiento
+
+    img {
+      width: 100%; // Asegurar que las imágenes ocupen todo el ancho del banner
+      height: auto; // Altura automática para mantener la proporción de la imagen
+    }
+  }
+
+  .prev-btn,
+  .next-btn {
+    width: 40px;
+    height: 40px;
+    border-bottom-right-radius: 64px;
+    border-top-right-radius: 64px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: blanchedalmond;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    .btn-img{
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .prev-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+
+  .btnBannerRedondo {
+    position: absolute;
+    border: none;
+    border-radius: 50%; /* Esto hace que el borde sea redondo */
+    width: 40px;
+    height: 40px;
+    top: 80%;
+    background-color: whitesmoke;
+}
+}
+
