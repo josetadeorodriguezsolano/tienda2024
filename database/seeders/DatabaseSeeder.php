@@ -18,5 +18,8 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        //orden en que se debe ejecutar  (no se puede tener productos sin categorias)
+        $this->call([CategoriaSeeder::class,ProductoSeeder::class]);
     }
 }

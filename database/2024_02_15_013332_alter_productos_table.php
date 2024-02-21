@@ -13,7 +13,7 @@ return new class extends Migration
     {
         //renombrar                         Blueprint->PLANOS de esquemas
         Schema::table('productos', function (Blueprint $table) {
-            $table->renameColumn('categoria_id', 'cat');
+           //$table->renameColumn('categoria_id', 'cat');
         });
     }
 
@@ -24,7 +24,7 @@ return new class extends Migration
     {
         //renombrar lo mismo que arriba pero al reves
         Schema::table('productos', function (Blueprint $table) {
-            $table->renameColumn('cat', 'categoria_id');
+           // $table->renameColumn('cat', 'categoria_id');
         });
     }
 };
