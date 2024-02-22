@@ -1,9 +1,6 @@
-
 @extends('layouts.plantilla')
-@section('titulo','tarjetas')
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@section('titulo','Textos')
 @section('main')
-    @vite(['resources/sass/global/tarjetas.scss', 'resources/js/app.js'])
     <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
@@ -26,7 +23,8 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
-
+        <p>Hola soy Berenice  c:</p>
+        <p>Hola, Soy Elian</p>
         Anuncios
     </section>
     <section id="superOfertas">
@@ -39,14 +37,20 @@
         Lo Nuevo
     </section>
     <section id="gamers">
+        @if ($productos!=null)
+        @foreach ($productos as $producto)
         <section id="tarjeta01">
             <div class="tarjeta">
                 <div class="imgTarjeta">
-                    <img class="imgTarjeta" src="img/producto1.webp" alt="Producto">
+                    <img class="imgTarjeta"
+                    src="{{$producto->imagen}}" alt="Producto">
                 </div>
                 <div class="contenidoTarjeta">
-                    <p class="tituloTarjeta" title="HP Laptop PC 15s-fq5021sa | Intel Core i5-1235U Processor | 8GB RAM | 256GB SSD | Intel UHD Graphics | Windows 11 Home | Natural Silver">HP Laptop PC 15s-fq5021sa | Intel Core i5-1235U Processor | 8GB RAM | 256GB SSD | Intel UHD Graphics | Windows 11 Home | Natural Silver</p>
-                    <br><span class="precioTarjeta">MX$5,999.00</span>
+                    <p class="tituloTarjeta"
+                    title="{{$producto->nombre}}">
+                    {{$producto->nombre}}</p>
+                    <br><span class="precioTarjeta">
+                        MX{{$producto->precio}}</span>
                     <div class="detallesProducto">
                         <p>A 12 meses sin intereses de $399 <br>
                             Envío gratis
@@ -61,6 +65,8 @@
                 </div>
             </div>
         </section>
+        @endforeach
+        @endif
     </section>
     <section id="comentarios">
         Comentarios

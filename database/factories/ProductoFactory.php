@@ -2,9 +2,11 @@
 
 namespace Database\Factories;
 
+use App\Models\Categoria;
+use Doctrine\Inflector\Rules\Word;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Testing\Fakes\Fake;
-use App\Models\Categoria;
+
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Producto>
@@ -19,11 +21,12 @@ class ProductoFactory extends Factory
     public function definition(): array
     {
         return [
-         'nombre' => Fake()->name(),
-         'categoria_id'=> Categoria::all()->random()->id,
-         'descripcion' =>Fake()->paragraph(),
-         'precio' =>Fake()->numberBetween(10,9999),
-         "imagen" => Fake()->imageUrl(120,120,'producto',true),
+            //id automatico
+            'nombre'=>fake()->name(),
+            'categoria_id'=>Categoria::all()->random()->id,
+            'descripcion'=>fake()->paragraph(),
+            'precio'=>fake()->numberBetween(0,9999),
+            'imagen'=>fake()->imageUrl(120,120,'producto',true),//tamaño 120,120  nombre de la imagen o algo asi
         ];
     }
 }
