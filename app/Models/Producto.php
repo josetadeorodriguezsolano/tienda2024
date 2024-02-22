@@ -9,7 +9,9 @@ class Producto extends Model
 {
     use HasFactory;
 
-    public function categoria(){
-        return $this->hasOne(Categoria::class,'id','categoria_id');
+    public function categoria()
+    {
+        return $this->belongsTo(Categoria::class,"id","categoria_id");
+        //return $this->hasOne(Categoria::class,'id','categoria_id');
     }
 }
