@@ -1,9 +1,6 @@
-
 @extends('layouts.plantilla')
-@section('titulo','tarjetas')
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+@section('titulo','Textos')
 @section('main')
-    @vite(['resources/sass/global/tarjetas.scss', 'resources/js/app.js'])
     <header id="encabezadoPrincipal">
         <img src="img/logo.jpg">
         Super Tienda en Linea
@@ -66,6 +63,8 @@
                 </div>
             </div>
         </section>
+        @endforeach
+        @endif
     </section>
     <section id="comentarios">
         Comentarios

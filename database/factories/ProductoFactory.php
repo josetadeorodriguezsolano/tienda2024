@@ -5,6 +5,8 @@ namespace Database\Factories;
 use App\Models\Categoria;
 use Doctrine\Inflector\Rules\Word;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Testing\Fakes\Fake;
+
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Producto>
