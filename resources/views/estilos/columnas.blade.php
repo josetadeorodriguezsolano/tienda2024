@@ -19,7 +19,7 @@
         <p>Donec vitae sapien ut libero venenatis faucibus</p>
       </div>
     </div>
-    <div class="row custom-row">
+    <div class="row">
       <div class="col-md-6 custom-col gris-claro">
         <div class="marco-oscuro">
           <p>Vestibulum sem libero, vestibulum a justo vel, aliquam cursus erat. Morbi aliquam non quam vel luctus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div class="row custom-row">
+    <div class="row">
       <div class="col-md-3 custom-col lila">
         <div class="texto">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

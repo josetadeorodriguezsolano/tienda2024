@@ -2,11 +2,13 @@
 // 18-Feb-2024
 // https://www.staffdigital.pe/blog/diseno-de-paginas-web-10-tendencias-navegacion-web/
 // https://es.wix.com/blog/2020/05/los-mejores-patrones-de-diseno-web/
-.custom-row {
-    margin-top: 20px;
+.row {
+    margin:15px;
+    display: flex;
 }
 .custom-col {
     padding: 15px;
+    display: flex;
 }
 
 // 3 Columnas
@@ -14,6 +16,7 @@
     text-align: center;
     padding: 30px;   
     margin-top: 15px;
+    width: 100%;
 
 }
 .blanco {
@@ -38,10 +41,14 @@
 // 2 Columnas
 .gris-claro {
     background-color: #EEEEEE; /* Fondo gris claro */
+    width: 100%;
+    margin-right: 10px;
 }
   
 .gris-oscuro {
     background-color: #5E5E5E; /* Fondo gris oscuro */
+    width: 100%;
+    margin-left: 10px;
 }
 
 .custom-content {
@@ -76,6 +83,7 @@
     border: 3px solid white;
     text-align: center;
     height: 250px;
+    width: 100%;
     display: flex; /* Usamos flexbox */
     flex-direction: column; /* Dirección de columna para alinear elementos verticalmente */
     justify-content: flex-end; /* Alinear elementos al final del contenedor */
