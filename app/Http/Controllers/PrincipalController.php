@@ -9,7 +9,6 @@ class PrincipalController extends Controller
 {
     public static function paginaPrincipal(){
         $categoria = Categoria::buscarPorNombre('gamers');
-        $categoria->productos[0]
         return view('principal', ['productos' => $categoria -> productos]);
     }
 }
