@@ -1,19 +1,13 @@
 <?php
 
+use App\Http\Controllers\PrincipalController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('principal');
-});
+Route::get('/', [PrincipalController::class,'paginaPrincipal']);
 
 Route::get('/estilos/banners',function () {
     return view('estilos.banners');
 });
-<<<<<<< HEAD
-Route::get('/footer',function () {
-    return view('layouts.componentes.footer');
-});
-=======
 
 
 Route::get('/estilos/loading',function () {
@@ -27,4 +21,3 @@ Route::get('/tarjetas', function () {
     return view('layouts.componentes.tarjetas');
 });
 
->>>>>>> origin/main

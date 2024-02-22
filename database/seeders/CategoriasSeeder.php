@@ -2,16 +2,10 @@
 
 namespace Database\Seeders;
 
-<<<<<<< HEAD
 use App\Models\Categoria;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-=======
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use Illuminate\Database\Seeder;
-use App\Models\Categoria;
->>>>>>> origin/main
 
 class CategoriasSeeder extends Seeder
 {
@@ -20,17 +14,10 @@ class CategoriasSeeder extends Seeder
      */
     public function run(): void
     {
-<<<<<<< HEAD
 
         Categoria::factory()
         ->count(20)
         ->create();
 
-=======
-        //Categoria::truncate();
-        Categoria::factory()
-            ->count(20)
-            ->create();
->>>>>>> origin/main
     }
 }
