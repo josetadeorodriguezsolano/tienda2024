@@ -1,44 +1,22 @@
 @extends('layouts.plantilla')
-@section('titulo','Alta Productos')
+@section('titulo','Textos')
 @section('main')
     <main>
-        @if ($errors->any())
-            <span class="error">
-                {{ $errors->first()}}
-            </span><br>
-        @endif
-        <form method="post" action="alta" enctype="multipart/form-data">
-            <h3>Alta de Productos</h3>
+        <form method="post" action="./productos/alta" enctype="multipart/form-data">
             @csrf
             <label for='nombre'>Nombre:</label>
-            <input type="text"  name="nombre"
-                value="{{old('nombre')}}"/><br>
-            @if ($errors->has('nombre'))
-                <span class="error">
-                    {{ $errors->first('nombre') }}
-                </span><br>
-            @endif
+            <input type="text" name="nombre"/>
             <label for="categoria">Categoria:</label>
-            <select name="categoria" >
-                @foreach ($categorias as $categoria)
-                    <option value="{{$categoria->id}}"
-                        @if (old("categoria")==$categoria->id)
-                            selected
-                        @endif
-                    >{{$categoria->nombre}}</option>
+            <select name="categoria">
+                @foreach ($categotias as $categoria)
+                    <option value="{{$categoria->id}}">
+                        {{$categoria->nombre}}</option>
                 @endforeach
-            </select><br>
+            </select>
             <label for="precio">Precio:</label>
-            <input type="number" value="{{old("precio")}}"
-                 min="1" max="9999" name="precio"/><br>
-            <label for="descripcion">Descripcion:</label><br>
-            <textarea name="descripcion" cols="50" rows="5">
-               {{old("descripcion")}}
-            </textarea><br>
+            <input type="number" name="precio"/>
             <label for="imagen">Imagen:</label>
-            <input type="file" name="imagen"><br>
+            <input type="file" name="imagen">
             <input type="submit" value="Guardar">
         </form>
     </main>
-
-@endsection
