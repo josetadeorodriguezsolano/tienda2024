@@ -1,10 +1,20 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use PrincipalController
 
-Route::get('/', function () {
-    return view('principal');
-});
+Route::get('/',[PrincipalController::class,'principal']);
+
+Route::prefix('productos')->controller(ProductosController::class)
+    ->group(function(){
+        Route::get('formAlta','formAlta');
+        Route::get('alta','alta');
+    });
+
+
+
+
+
 
 Route::get('/estilos/banners',function () {
     return view('estilos.banners');
