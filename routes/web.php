@@ -1,15 +1,17 @@
 <?php
 
+use App\Http\Controllers\PrincipalController;
+use App\Http\Controllers\ProductosController;
 use Illuminate\Support\Facades\Route;
-use PrincipalController
 
-Route::get('/',[PrincipalController::class,'principal']);
+Route::get('/',[PrincipalController::class, 'paginaPrincipal']);
 
 Route::prefix('productos')->controller(ProductosController::class)
     ->group(function(){
         Route::get('formAlta','formAlta');
-        Route::get('alta','alta');
+        Route::post('alta','alta');
     });
+
 
 
 
@@ -19,7 +21,6 @@ Route::prefix('productos')->controller(ProductosController::class)
 Route::get('/estilos/banners',function () {
     return view('estilos.banners');
 });
-
 
 Route::get('/estilos/loading',function () {
     return view('estilos.loading');

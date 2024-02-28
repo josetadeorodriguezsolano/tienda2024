@@ -9,6 +9,5 @@
     @vite(['resources/sass/textos.scss', 'resources/js/app.js'])
 </head>
 <body>
-    @section("main")
-
+    @yield("main")
 </body>

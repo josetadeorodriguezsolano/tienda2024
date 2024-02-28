@@ -1,22 +1,25 @@
 @extends('layouts.plantilla')
-@section('titulo','Textos')
+@section('titulo','Alta Productos')
 @section('main')
     <main>
-        <form method="post" action="./productos/alta" enctype="multipart/form-data">
+        <form method="post" action="alta" enctype="multipart/form-data">
             @csrf
             <label for='nombre'>Nombre:</label>
-            <input type="text" name="nombre"/>
+            <input type="text"  name="nombre"/><br>
             <label for="categoria">Categoria:</label>
             <select name="categoria">
-                @foreach ($categotias as $categoria)
+                @foreach ($categorias as $categoria)
                     <option value="{{$categoria->id}}">
                         {{$categoria->nombre}}</option>
                 @endforeach
-            </select>
+            </select><br>
             <label for="precio">Precio:</label>
-            <input type="number" name="precio"/>
+            <input type="number" min="1" max="9999" name="precio"/><br>
+            <label for="descripcion">Descripcion:</label>
+            <textarea name="descripcion" cols="80" rows="5">
+            </textarea><br>
             <label for="imagen">Imagen:</label>
-            <input type="file" name="imagen">
+            <input type="file" name="imagen"><br>
             <input type="submit" value="Guardar">
         </form>
     </main>
