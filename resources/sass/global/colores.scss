@@ -1,2 +1,63 @@
 //Luna Gaxiola Elian Osiris
 //Estudiar teorias actuales de colores de paginas web
+
+/**
+Monocromatico azul
+Main: #336699 (Medium Blue)
+Lighter: #6699CC (Light Blue)
+Darker: #003366 (Dark Blue)
+
+Paleta Analoga
+Main Color: #FF9933 (Orange)
+Analogous Colors: #FFCC66 (Light Orange), #FF6600 (Darker Orange)
+
+Paleta complementaria
+Main Color: #00FF00 (Green)
+Complementary Color: #FF0000 (Red)
+Neutral: #FFFFFF (White) Para el balance de colores
+
+paleta complementaria corta
+Main Color: #FF6699 (Pink)
+Split-Complementary Colors: #66FFFF (Light Blue), #66FF99 (Light Green)
+
+Paleta Triadica
+Main Color: #FF3399 (Magenta)
+Triadic Colors: #33FF99 (Green), #9933FF (Purple)
+
+Paleta Tetradica:
+Main Color: #FF6600 (Orange)
+Tetradic Colors: #00FF66 (Green), #6666FF (Blue), #FF66CC (Pink)
+
+Paleta Neutral:
+Main: #CCCCCC (Light Gray)
+Secondary: #666666 (Medium Gray)
+Color Acento: #333333 (Dark Gray)
+Highlight Color: #FFFFFF (White) por contraste
+**/
+
+// Color principal
+$main-color: #336699;
+
+// Definir colores mas oscuro y mas claros
+$lighter-shade: lighten($main-color, 20%);
+$darker-shade: darken($main-color, 20%);
+
+// Estilos de diferentes colores
+body {
+  background-color: $lighter-shade; //color mas claro para el fondo
+}
+
+h1 {
+  color: $main-color; // Color principal para el heading
+}
+
+p {
+  color: $darker-shade; // Oscuro para parrafos
+}
+
+a {
+  color: $main-color; // Use the main color for links
+  &:hover {
+    color: $darker-shade; // Darken the color on hover
+  }
+}

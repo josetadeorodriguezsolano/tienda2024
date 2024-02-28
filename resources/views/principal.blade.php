@@ -25,6 +25,8 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
+        <p>Hola soy Berenice  c:</p>
+        <p>Hola, Soy Elian</p>
         Anuncios
     </section>
     <section id="superOfertas">
@@ -37,21 +39,20 @@
         Lo Nuevo
     </section>
     <section id="gamers">
-        {{-- Si productos es diferente de nulo --}}
-        @if ($productos != null)
+        @if ($productos!=null)
         @foreach ($productos as $producto)
-
-
-
         <section id="tarjeta01">
             <div class="tarjeta">
                 <div class="imgTarjeta">
-                    <img class="imgTarjeta" src={{$producto->imagen}} alt="Producto">
+                    <img class="imgTarjeta"
+                    src="{{$producto->imagen}}" alt="Producto">
                 </div>
                 <div class="contenidoTarjeta">
-                    <p class="tituloTarjeta" title="{{$producto->nombre}}">{{$producto->nombre}}</p>
-
-                    <br><span class="precioTarjeta">MX$ {{$producto->precio}}</span>
+                    <p class="tituloTarjeta"
+                    title="{{$producto->nombre}}">
+                    {{$producto->nombre}}</p>
+                    <br><span class="precioTarjeta">
+                        MX{{$producto->precio}}</span>
                     <div class="detallesProducto">
                         <p> {{$producto->descripcion}} <br>
                             Envío gratis
@@ -66,11 +67,8 @@
                 </div>
             </div>
         </section>
-
         @endforeach
         @endif
-        {{$productos->links()}}
-
     </section>
     <section id="comentarios">
         Comentarios

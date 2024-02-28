@@ -5,11 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Producto extends Model
+class Proveedor extends Model
 {
     use HasFactory;
-
-    public function categoria(){
-        return $this->hasOne(Categoria::class,'id','categoria_id');
-    }
+    protected $table ="proveedores";
 }
