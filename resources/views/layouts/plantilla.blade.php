@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('titulo')</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-    @livewireStyles
 </head>
 <body>
     @yield("main")
