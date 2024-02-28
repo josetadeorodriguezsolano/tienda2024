@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ProductoRequest;
 use Illuminate\Http\Request;
 use App\Models\Categoria;
 use App\Models\Producto;
@@ -14,7 +15,7 @@ class ProductosController extends Controller
         return view("alta_producto",["categorias"=>$categorias]);
     }
 
-    public function alta(Request $request)
+    public function alta(ProductoRequest $request)
     {
         $producto = new Producto();
         $producto->nombre = $request->nombre;
