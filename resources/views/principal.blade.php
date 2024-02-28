@@ -106,5 +106,4 @@
         <h5>
             Holaa soy H6
         </h5>
-</body>
-</html>
+@endsection
