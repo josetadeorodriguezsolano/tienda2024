@@ -11,10 +11,15 @@
 
 // En estos se encuentran:
 
-#inputForm
-{
-
 //Input de texto: Para que el usuario ingrese texto.
+form{
+    @extend .w3-container;
+}
+
+label{
+    @extend .w3-text-indigo;
+}
+
 input[type="text"] {
     padding: 8px;
     border: 1px solid #ccc;
@@ -236,7 +241,7 @@ input[type="checkbox"] {
 }
 
 //Input de botón: Crea un botón que puede ejecutar JavaScript.
-input[type="button"] {
+input[type="button"], input[type="submit"] {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -263,5 +268,4 @@ input[type="button"] {
 //Input oculto: Permite enviar datos que no deben ser visibles para el usuario.
 input[type="hidden"]{
     display: none;
-}
 }
