@@ -22,12 +22,12 @@ class UsersController extends Controller
 
     public function login(Request $request)
     {
-        $usuario = User::where('email',$request->correo)->get()->first();
+        $usuario =User::where('email',$request->correo)->get()->first();
         if ($usuario &&
             Hash::check($request->password,$usuario->password))
         {
             Session::put('user',$usuario);
-            return redirect('/productos/formAlta');
+            return redirect('/');
         }
         return back()->with('error', 'Correo o passowrd incorrectos');
     }
