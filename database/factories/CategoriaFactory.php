@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-
 use Doctrine\Inflector\Rules\Word;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -19,8 +18,7 @@ class CategoriaFactory extends Factory
     public function definition(): array
     {
         return [
-            //id automatico
-            "nombre"=>fake()->Word(),
+            "nombre" => fake()->Word(),
         ];
     }
 }

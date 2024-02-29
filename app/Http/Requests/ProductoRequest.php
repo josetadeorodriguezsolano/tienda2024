@@ -23,11 +23,10 @@ class ProductoRequest extends FormRequest
     {
         return [
             'nombre' => 'required',
-            'categoria_id' => 'required|exists:categorias,id',
-            'precio' => 'required|numeric',
+            'categoria' => 'required|exists:categorias,id',
+            'precio' => 'required',
             'descripcion' => 'required',
-            'imagen' => 'required|image'
-
+            'imagen' => 'required'
         ];
     }
 }

@@ -14,6 +14,7 @@
     -Busqueda por categoria.
     -Busqueda general
     -Filtros por marca, modulo y otras caracterizticas.
+    -Historial de busquedas.
 4 Comentarios
     -Calificar productos comprados.
     -Pulgar arriba a otro comentario.
@@ -22,6 +23,8 @@
     -Filtro de buenos comentarios.
     -Filtro de malos comentarios.
     -Calificacion del proveedor.
+    -Realizar pregunta.
+    -Constestar pregunta.
 5 Clientes
     -Registro
         -Datos generales
@@ -31,6 +34,7 @@
     -Recuperar contraseña
     -Cambiar contraseña
     -Validad cuenta
+    -Ver pedidos
 6 Pedidos
     -Administar el pedido, enviado, rechazado, recibido.
     -Devoluciones.
@@ -40,7 +44,7 @@
         -Catalogo de paqueterias.
         -Rastreo de paquetes.
 7 Proveedores
-    -Alta proveedor.
+    -Registro proveedores.
     -Catalogo productos.
     -Catalogo categorias.
 8 Pagina proveedor.
@@ -53,9 +57,21 @@
     -Ganacias por periodo.
     -Ventas por periodo.
     -Ventas por proveedor.
-10
-11
-12
+10 Regalos
+    -Creacion de mesa de regalos.
+    -Mesa de regalos.
+    -Compra de regalos
+11 Programar pedidos
+    -Crear pedido mensuales.
+    -Crear ofertas al mayoreo.
+12 Cupones
+    -Crear cupones.
+        -Por producto.
+        -Por proveedor.
+        -Por tipo de producto y proveedor.
+    -Utilizacion de cupones.
+        -Limitar cantidad de cupones.
+
 13
 14
 15

@@ -25,8 +25,6 @@
         Categorias mas buscadas
     </section>
     <section id="anuncios">
-        <p>Hola soy Berenice  c:</p>
-        <p>Hola, Soy Elian</p>
         Anuncios
     </section>
     <section id="superOfertas">
@@ -50,9 +48,9 @@
                 <div class="contenidoTarjeta">
                     <p class="tituloTarjeta"
                     title="{{$producto->nombre}}">
-                    {{$producto->nombre}}</p>
+                        {{$producto->nombre}}</p>
                     <br><span class="precioTarjeta">
-                        MX{{$producto->precio}}</span>
+                        MX$ {{$producto->precio}}</span>
                     <div class="detallesProducto">
                         <p> {{$producto->descripcion}} <br>
                             Envío gratis
@@ -69,6 +67,7 @@
         </section>
         @endforeach
         @endif
+         {{$productos->links()}}
     </section>
     <section id="comentarios">
         Comentarios
@@ -107,5 +106,4 @@
         <h5>
             Holaa soy H6
         </h5>
-</body>
-</html>
+@endsection
