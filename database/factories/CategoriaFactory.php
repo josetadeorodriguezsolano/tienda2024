@@ -2,10 +2,7 @@
 
 namespace Database\Factories;
 
-<<<<<<< HEAD
-=======
 use Doctrine\Inflector\Rules\Word;
->>>>>>> origin/main
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**

@@ -35,6 +35,7 @@
         Lo Nuevo
     </section>
     <section id="gamers">
+        @if($productos!=null)
         @foreach($productos as $producto)
         <section id="tarjeta01">
             <div class="tarjeta">
@@ -42,7 +43,7 @@
                     <img class="imgTarjeta" src="{{$producto -> imagen}}" alt="Producto">
                 </div>
                 <div class="contenidoTarjeta">
-                    <p class="{{producto->nombre}}" title="{{producto->nombre}}"</p>
+                    <p class="{{$producto->nombre}}" title="{{$producto->nombre}}"></p>
                     <br><span class="precioTarjeta">MX$ {{$producto->precio}}</span>
                     <div class="detallesProducto">
                         <p>A 12 meses sin intereses de $399 <br>
@@ -59,5 +60,5 @@
             </div>
         </section>
         @endforeach
-</body>
-</html>
+        @endif
+@endsection

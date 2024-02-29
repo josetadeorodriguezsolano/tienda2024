@@ -18,7 +18,7 @@ return new class extends Migration
                 ->on('categorias');
             $table->text("descripcion");
             $table->unsignedDouble("precio");
-            $table->string("imagen")->default("img/No_image_available.png");
+            $table->string("imagen")->default("img/default.jpg");
             $table->timestamps();
         });
     }
