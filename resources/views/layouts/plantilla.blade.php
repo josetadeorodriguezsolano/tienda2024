@@ -9,7 +9,6 @@
     @livewireStyles
 </head>
 <body>
-    @section("main")
-        @show
-        @livewireScripts
+    @yield("main")
+    @include('layouts.componentes.error_modal')
 </body>
