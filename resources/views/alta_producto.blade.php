@@ -5,6 +5,11 @@
         <form method="post" action="alta" enctype="multipart/form-data">
             <h3>Alta de Productos</h3>
             @csrf
+            @if ($errors->any())
+                <span class="error">
+                    {{$errors->first()}}
+                </span><br>
+            @endif
             <label for='nombre'>Nombre:</label>
             <input
             type="text"

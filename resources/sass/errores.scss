@@ -1,0 +1,11 @@
+span.error{
+    color: #fcb8b8; /* equivalente a text-red-200 de Tailwind */
+  padding: 0.5rem; /* equivalente a p-2 de Tailwind */
+  width: 100%;
+  margin-top: 0.5rem; /* equivalente a my-2 de Tailwind */
+  margin-bottom: 0.5rem;
+  font-weight: 600; /* equivalente a font-semibold de Tailwind */
+  background-color: #ef4444; /* equivalente a bg-red-700 de Tailwind */
+  font-size: 1rem; /* equivalente a text-base de Tailwind */
+  line-height: 1.5; /* equivalente a leading-normal de Tailwind */
+}

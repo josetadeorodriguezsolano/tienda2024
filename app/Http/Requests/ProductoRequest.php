@@ -29,4 +29,11 @@ class ProductoRequest extends FormRequest
             'imagen' => 'required|max:512|mimes:jpg'
         ];
     }
+
+    public function messages()
+    {
+        return[
+            'nombre.required' => 'El nombre del producto es requerido',
+        ];
+    }
 }
