@@ -22,11 +22,18 @@ class ProductoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nombre' => 'required',
+            'nombre' => 'required|max:200|min:5',
             'categoria' => 'required|exists:categorias,id',
-            'precio' => 'required',
-            'descripcion' => 'required',
-            'imagen' => 'required'
+            'precio' => 'required|gt:0',
+            'descripcion' => 'required|min:5|max:5000',
+            'imagen' => 'required|max:512|mimes:jpg'
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'nombre.required' => 'El nombre del producto es requerido',
         ];
     }
 }

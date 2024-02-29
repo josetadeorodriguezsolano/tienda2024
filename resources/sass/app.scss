@@ -13,6 +13,9 @@
 @import "global/tablas";
 @import "global/tarjetas";
 @import "global/textos";
+@import "errores";
+@import "modal";
+
 $colorTexto:rgb(28, 23, 23);
 $fondoTexto:red;
 .colorTexto{
