@@ -61,4 +61,6 @@
         </section>
         @endforeach
         @endif
+</body>
+</html>
 @endsection
