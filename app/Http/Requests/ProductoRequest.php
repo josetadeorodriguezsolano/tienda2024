@@ -22,11 +22,26 @@ class ProductoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'nombre' => 'required',
+            'nombre' => 'required|max: 200',
             'categoria' => 'required|exists:categorias,id',
-            'precio' => 'required',
-            'descripcion' => 'required',
+            'precio' => 'required|gt:0',
+            'descripcion' => 'required|min:5|max:1000',
             'imagen' => 'required'
+        ];
+    }
+
+    public function messages(){
+        return [
+            'nombre.required' => 'El nombre es obligatorio',
+            'nombre.max' => 'El nombre no puede superar los 200 caracteres',
+            'categoria.required' => 'La categoría es obligatoria',
+            'categoria.exists' => 'La categoría no existe',
+            'precio.required' => 'El precio es obligatorio',
+            'precio.gt' => 'El precio debe ser mayor a 0',
+            'descripcion.required' => 'La descripción es obligatoria',
+            'descripcion.min' => 'La descripción debe tener al menos 5 caracteres',
+            'descripcion.max' => 'La descripción no puede superar los 1000 caracteres',
+            'imagen.required' => 'La imagen es obligatoria'
         ];
     }
 }

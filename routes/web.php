@@ -2,9 +2,17 @@
 
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/',[PrincipalController::class, 'paginaPrincipal']);
+
+Route::prefix('users')->controller(UsersController::class)
+    ->group(function(){
+        Route::get('/','vistalogin');
+        Route::post('login','login');
+    });
+
 
 Route::prefix('productos')->controller(ProductosController::class)
     ->group(function(){
@@ -38,4 +46,6 @@ Route::get('/estilos/inputs',function () {
 Route::get('/tarjetas', function () {
     return view('layouts.componentes.tarjetas');
 });
+
+
 
