@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\UsersController;
@@ -18,12 +19,16 @@ Route::prefix('productos')->controller(ProductosController::class)
     ->group(function(){
         Route::get('formAlta','formAlta');
         Route::post('alta','alta');
+        Route::get('show10','show10');
+        Route::get('show/{id}','show');
+        Route::get('showByCategory/{id}','showByCategory');
     });
 
 
-
-
-
+    Route::prefix('categorias')->controller(CategoriasController::class)
+    ->group(function(){
+        Route::get('showAll','showAll');
+    });
 
 
 Route::get('/estilos/banners',function () {

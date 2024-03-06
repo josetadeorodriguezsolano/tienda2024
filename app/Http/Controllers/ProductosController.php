@@ -29,4 +29,23 @@ class ProductosController extends Controller
         $producto->imagen = "storage/productos/".$producto->id.".jpg";
         $producto->save();
     }
+
+
+    public function show10()
+    {
+        return Producto::take(10)->get();
+
+    }
+
+    public function show($id)
+    {
+        return Producto::find($id);
+    }
+
+    //Show a product by a category foreign key
+    public function showByCategory($id)
+    {
+        return Producto::where('categoria_id', $id)->take(20)->get();
+    }
+
 }
