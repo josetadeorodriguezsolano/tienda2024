@@ -18,7 +18,7 @@ class paisSeeder extends Seeder
         DB::unprepared(file_get_contents(base_path().'/database/sql/estados.sql'));
         DB::unprepared(file_get_contents(base_path().'/database/sql/municipios.sql'));
         DB::unprepared(file_get_contents(base_path().'/database/sql/ciudades.sql'));
-        //DB::unprepared(file_get_contents(base_path().'/database/sql/asentamientos.sql'));
-        //DB::unprepared(file_get_contents(base_path().'/database/sql/localidades.sql'));
+        DB::unprepared(file_get_contents(base_path().'/database/sql/asentamientos.sql'));
+        DB::unprepared(file_get_contents(base_path().'/database/sql/localidades.sql'));
     }
 }
