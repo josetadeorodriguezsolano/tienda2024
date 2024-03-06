@@ -9,4 +9,5 @@
 </head>
 <body>
     @yield("main")
+    @include('layouts.componentes.error_modal')
 </body>

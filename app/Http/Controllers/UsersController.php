@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Crypt;
+use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
@@ -12,28 +12,23 @@ class UsersController extends Controller
 {
     public function vistaLogin()
     {
+        // $user = new User();
+        // $user->name = "admin";
+        // $user->email = 'administrador@tienda.test';
+        // $user->password = Hash::make('123');
+        // $user->save();
         return view('login');
     }
 
     public function login(Request $request)
     {
-        $usuario = User::where('email', $request->email)->get()->first();
-
-        if($usuario && Hash::check($request->password, $usuario->password)){
-            Session::put('usuario', $usuario);
-            return redirect('principal')
-        }else{
-            return "Usuario o contraseña incorrectos";
+        $usuario =User::where('email',$request->correo)->get()->first();
+        if ($usuario &&
+            Hash::check($request->password,$usuario->password))
+        {
+            Session::put('user',$usuario);
+            return redirect('/');
         }
-
-
-
-        $usuario = $request->usuario;
-        $password = $request->password;
-        if ($usuario == "admin" && $password == "1234") {
-            return "Bienvenido";
-        } else {
-            return "Usuario o contraseña incorrectos";
-        }
+        return back()->with('error', 'Correo o passowrd incorrectos');
     }
 }

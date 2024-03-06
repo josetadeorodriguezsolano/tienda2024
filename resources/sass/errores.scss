@@ -1,0 +1,14 @@
+span.error{
+    color:red;
+    background-color: white;
+    font-weight: bold;
+}
+div.error{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -ms-flex-align: center;
+}

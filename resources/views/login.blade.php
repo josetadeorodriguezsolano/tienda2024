@@ -7,15 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="login" name="login" method="POST">
+    <form name="login" method="post" action="login">
         @csrf
-
         <label for="correo">Correo:</label>
-        <input type="text" name="correo" ><br>
+        <input type="email" name="correo"><br>
         <label for="password">Contraseña:</label>
-        <input type="password" name="password" ><br>
-        <input type="submit" value="Ingresar">
+        <input type="password" name="password"><br>
+        <input type="submit" value="entrar">
     </form>
-
 </body>
 </html>
