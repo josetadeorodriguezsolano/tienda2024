@@ -107,7 +107,3 @@
             Holaa soy H6
         </h5>
 @endsection
-<<<<<<< HEAD
-
-=======
->>>>>>> tadeo
