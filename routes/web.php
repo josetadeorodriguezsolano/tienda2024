@@ -11,7 +11,8 @@ Route::get('/',[PrincipalController::class,'principal']);
 Route::prefix('productos')->controller(ProductosController::class)
     ->group(function(){
         Route::get('formAlta','formAlta');
-        Route::get('alta','alta');
+        Route::post('alta','alta');
+        Route::get('show10','show10');
     });
 
 
