@@ -6,7 +6,7 @@
             <h3>Alta de Productos</h3>
             @csrf
             <label for='nombre'>Nombre:</label>
-            <input type="text" name="nombre"/>
+            <input type="text"  name="nombre"/><br>
             <label for="categoria">Categoria:</label>
             <select name="categoria">
                 @foreach ($categotias as $categoria)

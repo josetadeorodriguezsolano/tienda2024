@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\ProductosController;
-use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 use PrincipalController
 
