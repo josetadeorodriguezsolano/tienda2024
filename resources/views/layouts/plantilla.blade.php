@@ -9,5 +9,8 @@
 </head>
 <body>
     @yield("main")
+<<<<<<< HEAD
     @include('layouts.componentes.error_modal')
+=======
+>>>>>>> tadeo
 </body>

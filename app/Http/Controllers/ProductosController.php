@@ -29,4 +29,9 @@ class ProductosController extends Controller
         $producto->imagen = "storage/productos/".$producto->id.".jpg";
         $producto->save();
     }
+
+    public function show10()
+    {
+        return Producto::take(10)->get();
+    }
 }
