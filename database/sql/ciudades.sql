@@ -1,4 +1,4 @@
-INSERT INTO `ciudad` (`id`, `municipio_id`, `nombre`) VALUES
+INSERT INTO `ciudades` (`id`, `municipio_id`, `nombre`) VALUES
 	(1, 3, 'Abasolo'),
 	(2, 10, 'Acala'),
 	(3, 11, 'Acámbaro'),

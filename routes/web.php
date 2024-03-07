@@ -4,7 +4,12 @@ use App\Http\Controllers\PrincipalController;
 use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\UsersController;
 use App\Http\Middleware\LoginMiddleware;
+use App\Livewire\CiudadNacimiento;
 use Illuminate\Support\Facades\Route;
+
+Route::get('nacimiento',function(){
+    return view('ciudad_nacimiento');
+});
 
 Route::get('/',[PrincipalController::class, 'paginaPrincipal'])
 ->name('principal');

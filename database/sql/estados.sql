@@ -1,4 +1,4 @@
-INSERT INTO `estado` (`id`, `pais_id`, `nombre`, `code`) VALUES
+INSERT INTO `estados` (`id`, `pais_id`, `nombre`, `code`) VALUES
 	(1, 42, 'Aguascalientes', 'Ags.'),
 	(2, 42, 'Baja California', 'BC'),
 	(3, 42, 'Baja California Sur', 'BCS'),
