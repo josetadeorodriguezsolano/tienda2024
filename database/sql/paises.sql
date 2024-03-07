@@ -1,4 +1,4 @@
-INSERT INTO `pais` (`id`, `nombre`) VALUES
+INSERT INTO `paises` (`id`, `nombre`) VALUES
 	(1, 'Australia'),
 	(2, 'Austria'),
 	(3, 'Azerbaiyán'),
