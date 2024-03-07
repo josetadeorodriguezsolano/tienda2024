@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEstadoTable extends Migration
+class CreateEstadosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateEstadoTable extends Migration
      */
     public function up()
     {
-        Schema::create('estado', function (Blueprint $table) {
+        Schema::create('estados', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->unsignedBigInteger('pais_id');
             $table->string('code',10);
-            $table->foreign('pais_id')->references('id')->on('pais');
+            $table->foreignId('pais_id')->references('id')->on('paises');
 
             $table->engine = 'InnoDB';
             $table->charset = 'latin1';
@@ -33,6 +32,6 @@ class CreateEstadoTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('estado');
+        Schema::dropIfExists('estados');
     }
 }
