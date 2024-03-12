@@ -1,5 +1,5 @@
 @extends('layouts.plantilla')
-@section('titulo', 'home')
+@section('titulo','home')
 @section('main')
 <main>
 <div id="navbar">

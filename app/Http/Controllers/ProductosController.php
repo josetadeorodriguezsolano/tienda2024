@@ -17,7 +17,7 @@ class ProductosController extends Controller
     public function alta(ProductoRequest $request){
         $producto = new Producto();
         $producto->nombre = $request->nombre;
-        $producto->categorias_id = $request->categoria;
+        $producto->categoria_id = $request->categoria;
         $producto->descripcion = $request->descripcion;
         $producto->precio = $request->precio;
         $producto->save();

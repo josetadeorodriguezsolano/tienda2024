@@ -11,6 +11,6 @@ class Producto extends Model
 
     public function categoria()
     {
-        return $this -> hasOne(Categoria::class,'id','categorias_id');
+        return $this -> hasOne(Categoria::class,'id','categoria_id');
     }
 }

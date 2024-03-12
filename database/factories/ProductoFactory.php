@@ -11,7 +11,7 @@ class ProductoFactory extends Factory
     {
         return [
             "nombre" => fake()->name(),
-            "categorias_id" => Categoria::all()->random()->id,
+            "categoria_id" => Categoria::all()->random()->id,
             "descripcion" => fake()->paragraph(),
             "precio" => fake()->numberBetween(10,9999),
             "imagen" => fake()->imageUrl(120,120, "producto", true),

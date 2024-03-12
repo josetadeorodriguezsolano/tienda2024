@@ -12,7 +12,7 @@ class Categoria extends Model
 
     public function productos()
     {
-        return $this -> hasMany(Producto::class,'categorias_id','id');
+        return $this -> hasMany(Producto::class,'categoria_id','id');
     }
 
     public static function buscarPorNombre($nombre)
@@ -21,7 +21,7 @@ class Categoria extends Model
     }
 
     public function productosPaginados(){
-        return Producto::where("categorias_id", $this->id)->paginate(16);
+        return Producto::where("categoria_id", $this->id)->paginate(16);
     }
 }
 

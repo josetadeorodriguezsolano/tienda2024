@@ -19,8 +19,8 @@ class UserController extends Controller
         if($usuario && Hash::check($request->password,$usuario->password))
         {
             Session::put('user',$usuario);
-            return redirect('/');
+            return redirect('/productos/formAlta');
         }
-        return back()->with('error','Correo o contraña incorrecta');
+        return back()->with('error','Correo o contraseña incorrecta');
     }
 }
