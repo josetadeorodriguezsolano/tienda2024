@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
-            $table->string("Nombre",200); // Nombre,length. El default es 255
+            $table->string("nombre",200); // Nombre,length. El default es 255
             $table->foreignId("categoria_id")->references('id')->on('categorias');
-            $table->text("Descripcion")->nullable();
-            $table->unsignedDouble("Precio");
+            $table->text("descripcion")->nullable();
+            $table->unsignedDouble("precio");
             $table->string("imagen")->default("img/default.jpg");
             $table->timestamps();
         });

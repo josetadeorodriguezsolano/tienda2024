@@ -1,0 +1,26 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Categoria</th>
+                <th>Descripcion</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($productos as $producto)
+                <tr>
+                    <td>{{$producto->nombre}}</td>
+                    <td>{{$producto->categoria->nombre}}</td>
+                    <td>{{$producto->descripcion}}</td>
+                    <td>{{$producto->precio}}</td>
+                    <td>{{$producto->imagen}}</td>
+                    <td><i>Editar</i><i>Eliminar</i></td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+</div>
