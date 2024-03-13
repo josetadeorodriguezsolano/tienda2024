@@ -40,6 +40,9 @@ Route::get('productos/catalogo',ProductosCatalogo::class);
 
 
 
+Route::get('/estilos/tablas',function () {
+    return view('estilos.tablas');
+});
 
 Route::get('/estilos/banners',function () {
     return view('estilos.banners');

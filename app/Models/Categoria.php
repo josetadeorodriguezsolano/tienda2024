@@ -10,7 +10,8 @@ class Categoria extends Model
     use HasFactory;
     public static $contador;
 
-    public function productos() {
+    public function productos()
+    {
         return $this->hasMany(Producto::class,'categoria_id','id');
     }
 
