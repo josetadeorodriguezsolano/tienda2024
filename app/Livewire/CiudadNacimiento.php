@@ -16,6 +16,7 @@ class CiudadNacimiento extends Component
     public $municipio_id;
     public $ciudades;
     public $ciudad_id;
+
     public function mount()
     {
         $this->paises = Pais::all()->sortBy('nombre')->keyBy('id');

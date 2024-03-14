@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 <div>
+=======
+<div class="tabla-condensada">
+    <br>
+>>>>>>> origin/main
     <table>
         <thead>
             <tr>
@@ -12,13 +17,40 @@
         </thead>
         <tbody>
             @foreach ($productos as $producto)
+<<<<<<< HEAD
                 <tr>
+=======
+                @if ($id_editando == $producto->id)
+                    <td><input type="text" wire:model='nombre'></td>
+                    <td><select wire:model='categoria_id'>
+                            @foreach ($categorias as $categoria)
+                                <option value="{{$categoria->id}}"
+                                    @if ($categoria->id==$producto->categoria_id)
+                                        selected
+                                    @endif
+                                    >
+                                    {{$categoria->nombre}}</option>
+                            @endforeach
+                        </select></td>
+                    <td><textarea cols="50" rows="5" wire:model="descripcion">
+                        </textarea>
+                    </td>
+                    <td><input type="number" wire:model="precio"/></td>
+                    <td>{{$producto->imagen}}</td>
+                @else
+>>>>>>> origin/main
                     <td>{{$producto->nombre}}</td>
                     <td>{{$producto->categoria->nombre}}</td>
                     <td>{{$producto->descripcion}}</td>
                     <td>{{$producto->precio}}</td>
                     <td>{{$producto->imagen}}</td>
+<<<<<<< HEAD
                     <td><i>Editar</i><i>Eliminar</i></td>
+=======
+                    <td><button wire:click='editar({{$producto->id}})' class="fa-solid fa-pen-to-square">Editar</button>
+                        <button wire:click='eliminar({{$producto->id}})' class="fa-solid fa-trash">Eliminar</button></td>
+                @endif
+>>>>>>> origin/main
                 </tr>
             @endforeach
         </tbody>

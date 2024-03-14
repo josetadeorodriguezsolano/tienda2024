@@ -15,6 +15,10 @@
 @import "global/textos";
 @import "errores";
 @import "modal";
+@import '@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '@fortawesome/fontawesome-free/css/regular.css';
+@import '@fortawesome/fontawesome-free/css/solid.css';
+@import '@fortawesome/fontawesome-free/css/brands.css';
 
 $colorTexto:rgb(28, 23, 23);
 $fondoTexto:red;
