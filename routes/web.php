@@ -5,7 +5,6 @@ use App\Http\Controllers\ProductosController;
 use App\Http\Controllers\UsersController;
 use App\Http\Middleware\LoginMiddleware;
 use App\Livewire\CiudadNacimiento;
-use App\Livewire\Counter;
 use App\Livewire\ProductosCatalogo;
 use Illuminate\Support\Facades\Route;
 
@@ -60,6 +59,5 @@ Route::get('/tarjetas', function () {
     return view('layouts.componentes.tarjetas');
 });
 
-Route::get('/counter', Counter::class);
 
 
