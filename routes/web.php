@@ -38,7 +38,11 @@ Route::prefix('productos')->controller(ProductosController::class)
 
 Route::get('productos/catalogo',ProductosCatalogo::class);
 
-
+Route::prefix('categorias')->controller(PrincipalController::class)->group(function(){
+    Route::get('categoriabus','categoriabus');
+    Route::get('productoscategoria/{categoriaid}','productoscategoria');
+    Route::get('produ/{productoid}','produ');
+});
 
 
 Route::get('/estilos/tablas',function () {
