@@ -16,18 +16,20 @@ class ProductosCatalogo extends Component
     public $descripcion;
     public $imagen;
     public $precio;
+    public $refresh;
 
     public function mount()
     {
-        $this->productos = Producto::paginate();
-        $this->categorias = Categoria::all();
+        $this->refresh = 0;
     }
 
     public function render(){
+        $this->productos = Producto::paginate();
+        $this->categorias = Categoria::all();
+        $this->refresh++;
         return view('livewire.productos-catalogo',
         ['productos'=>$this->productos,
-        'categorias'=>$this->categorias,
-        'id_editando'=>$this->id_editando])
+        'categorias'=>$this->categorias])
         ->layout('layouts.plantilla')
         ->slot('main');
     }

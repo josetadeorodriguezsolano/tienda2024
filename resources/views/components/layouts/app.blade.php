@@ -10,8 +10,8 @@
 </head>
 <body>
     @section("main")
-        @if (isset($main))
-            {{$main}}
+        @if (isset($slot))
+            {{$slot}}
         @endif
         @show
         @include('layouts.components.error_modal')

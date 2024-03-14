@@ -1,4 +1,5 @@
 <div class="tabla-condensada">
+    <br>
     <table>
         <thead>
             <tr>
@@ -12,8 +13,6 @@
         </thead>
         <tbody>
             @foreach ($productos as $producto)
-                <tr>
-                    <td>{{$id_editando}}</td>
                 @if ($id_editando == $producto->id)
                     <td><input type="text" wire:model='nombre'></td>
                     <td><select wire:model='categoria_id'>
@@ -31,8 +30,6 @@
                     </td>
                     <td><input type="number" wire:model="precio"/></td>
                     <td>{{$producto->imagen}}</td>
-                    <td><i wire:click='aceptar()' class="fa-solid fa-pen-to-square"></i>
-                    <i wire:click='cancelar()' class="fa-solid fa-trash"></i></td>
                 @else
                     <td>{{$producto->nombre}}</td>
                     <td>{{$producto->categoria->nombre}}</td>
