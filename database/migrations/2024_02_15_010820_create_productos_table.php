@@ -21,6 +21,7 @@ return new class extends Migration
             $table->unsignedDouble("precio");
             $table->string("imagen")->default("img/default.jpg");
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -16,17 +16,25 @@ class ProductosCatalogo extends Component
     public $descripcion;
     public $imagen;
     public $precio;
-    public $refresh;
+
+    public function rules(): array
+    {
+        return [
+            'nombre' => 'required',
+            'categoria_id' => 'required|exists:categorias,id',
+            'precio' => 'required',
+            'descripcion' => 'required',
+            'imagen' => 'required'
+        ];
+    }
 
     public function mount()
     {
-        $this->refresh = 0;
     }
 
     public function render(){
         $this->productos = Producto::paginate();
         $this->categorias = Categoria::all();
-        $this->refresh++;
         return view('livewire.productos-catalogo',
         ['productos'=>$this->productos,
         'categorias'=>$this->categorias])
@@ -45,6 +53,23 @@ class ProductosCatalogo extends Component
     }
 
     public function eliminar($id){
+        $producto = Producto::find($id);
+        $producto->delete();
+    }
 
+    public function guardar(){
+        $this->validate();
+        $producto = Producto::find($this->id_editando);
+        $producto->nombre = $this->nombre;
+        $producto->descripcion = $this->descripcion;
+        $producto->precio = $this->precio;
+        $producto->categoria_id = $this->categoria_id;
+        $producto->imagen = $this->imagen;
+        $producto->save();
+        $this->id_editando = 0;
+    }
+
+    public function cancelar(){
+        $this->id_editando = 0;
     }
 }

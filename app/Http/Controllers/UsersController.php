@@ -29,6 +29,7 @@ class UsersController extends Controller
             Session::put('user',$usuario);
             return redirect('/productos/formAlta');
         }
+        Session::flash("error","Correo o passowrd incorrectos");
         return back()->with('error', 'Correo o passowrd incorrectos');
     }
 }
