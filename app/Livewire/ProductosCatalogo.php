@@ -4,7 +4,6 @@ namespace App\Livewire;
 
 use App\Models\Producto;
 use Livewire\Component;
-use App\Models\Categoria;
 
 class ProductosCatalogo extends Component
 {
@@ -36,9 +35,8 @@ class ProductosCatalogo extends Component
         $this->productos = Producto::paginate();
         $this->categorias = Categoria::all();
         return view('livewire.productos-catalogo',
-        ['productos'=>$this->productos,
-        'categorias'=>$this->categorias])
-        ->layout('layouts.plantilla')
+        ['productos'=>$this->productos])
+        ->layout('layout.plantilla')
         ->slot('main');
     }
 
